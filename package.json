@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "nodemon --ignore \"./data\" server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cryptr": "^6.0.3",
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,168 @@
+body {
+    max-width: 800px;
+    margin: auto;
+}
+
+#app {
+    background: #fae6ef;
+    margin-block-start: 20px;
+    border-radius: 5px;
+    padding-block: 20px;
+    padding-inline: 40px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.05em;
+}
+
+button:hover {
+    color: rgb(180, 180, 180);
+}
+
+header {
+    font-family: cursive;
+    font-size: 1.5em;
+    text-align: center;
+    margin-block-end: 20px;
+    color: #767676;
+}
+
+header h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3a7396;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.subheader {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 20px;
+}
+
+.main-title {
+    text-align: center;
+    color: rgba(36, 7, 7, 0.685);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bug-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.bug-preview,
+.bug-details,
+.bug-edit {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    font-size: 1.1em;
+    background-color: whitesmoke;
+    color: #8b8b8b;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    height: fit-content;
+    border: 0.2px solid #d8d8d8;
+}
+
+.bug-preview > span:first-child {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    font-size: 1.1em;
+}
+
+.bug-preview h4 {
+    margin-block-start: 2.5em;
+    flex-grow: 1;
+}
+
+[class^="severity"] {
+    font-weight: bold;
+    margin-block-end: 40px;
+}
+
+.severity1 {
+    color: tomato;
+}
+.severity2 {
+    color: #b69a01;
+}
+.severity3 {
+    color: green;
+}
+
+.bug-preview .actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-block-end: 10px;
+}
+
+.bug-preview button {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+}
+
+.bug-edit, .bug-details {
+    margin: auto;
+    width: 400px;
+}
+
+.bug-edit form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 10px;
+    text-align: start;
+}
+
+.bug-edit label {
+    display: flex;
+    gap: 5px;
+}
+
+.bug-edit .actions {
+    align-self: center;
+    margin-block-start: 20px;
+}
+
+.user-msg {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.success {
+    background-color: lightgreen;
+}
+
+.error {
+    background-color: red;
+    color: white;
+}
